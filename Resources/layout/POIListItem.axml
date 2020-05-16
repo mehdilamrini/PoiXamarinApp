@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:id="@+id/relativeLayout1"
+    android:padding="6dp">
+    <ImageView
+        android:src="@android:drawable/ic_menu_gallery"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:id="@+id/poiImageView" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/poiImageView"
+        android:id="@+id/linearLayout1"
+        android:layout_centerVertical="true">
+        <TextView
+            android:text="POI Name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameTextView"
+            android:textSize="22sp" />
+        <TextView
+            android:text="City, State, Postal Code"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addrTextView"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <TextView
+        android:text="204 miles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="14sp"
+        android:id="@+id/distanceTextView"
+        android:paddingLeft="4dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="right" />
+</RelativeLayout>
